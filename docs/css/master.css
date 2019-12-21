@@ -1,0 +1,9 @@
+body {
+  margin: 0 auto;
+  width: 92%;
+  max-width: 80em;
+}
+
+figure.right {
+  float: right;
+}
