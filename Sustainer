@@ -1,0 +1,53 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>KiCad BOM Example 5</title>
+    </head>
+    <body>
+    <h1>/home/helgesk/Documents/elektronikk/kicad prosjekter/støybokser/Sustainer/Sustainer.sch</h1>
+    <p>to. 12. des. 2019 kl. 21.00 +0100</p>
+    <p>Eeschema 5.1.5-52549c5~84~ubuntu18.04.1</p>
+    <p><b>Component Count:</b>80</p>
+    <table>
+    <tr><th style='width:640px'>Ref</th><th>Qnty</th><th>Value</th><th>Part</th><th>Footprint</th><th>Description</th><th>Vendor</th></tr>
+    <tr><td>BT1</td><td>1</td><td>9V</td><td>Device:Battery</td><td>Mine:Connector_2x1_1.5mm</td><td>Multiple-cell battery</td><td></td></tr>
+    <tr><td>C1, C2, C3, C10, C11, C20, C21, C22, C24</td><td>9</td><td>0.1u</td><td>Device:C</td><td>Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm</td><td>Unpolarized capacitor</td><td></td></tr>
+    <tr><td>C4</td><td>1</td><td>470u</td><td>Device:CP</td><td>Capacitor_THT:CP_Radial_D8.0mm_P3.50mm</td><td>Polarized capacitor</td><td></td></tr>
+    <tr><td>C5, C9</td><td>2</td><td>1u</td><td>Device:C</td><td>Capacitor_THT:C_Rect_L7.2mm_W7.2mm_P5.00mm_FKS2_FKP2_MKS2_MKP2</td><td>Unpolarized capacitor</td><td></td></tr>
+    <tr><td>C6, C8</td><td>2</td><td>0.001u</td><td>Device:C</td><td>Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2</td><td>Unpolarized capacitor</td><td></td></tr>
+    <tr><td>C7, C13, C15, C17, C19</td><td>5</td><td>220u</td><td>Device:CP</td><td>Capacitor_THT:CP_Radial_D6.3mm_P2.50mm</td><td>Polarized capacitor</td><td></td></tr>
+    <tr><td>C12</td><td>1</td><td>0.047u</td><td>Device:C</td><td>Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm</td><td>Unpolarized capacitor</td><td></td></tr>
+    <tr><td>C14</td><td>1</td><td>1u</td><td>Device:C</td><td>Capacitor_THT:CP_Radial_D5.0mm_P2.00mm</td><td>Unpolarized capacitor</td><td></td></tr>
+    <tr><td>C16</td><td>1</td><td>10u</td><td>Device:C</td><td>Capacitor_THT:CP_Radial_D5.0mm_P2.00mm</td><td>Unpolarized capacitor</td><td></td></tr>
+    <tr><td>C18</td><td>1</td><td>22u</td><td>Device:C</td><td>Capacitor_THT:CP_Radial_D5.0mm_P2.00mm</td><td>Unpolarized capacitor</td><td></td></tr>
+    <tr><td>C23</td><td>1</td><td>1u</td><td>Device:CP</td><td>Capacitor_THT:CP_Radial_D5.0mm_P2.00mm</td><td>Polarized capacitor</td><td></td></tr>
+    <tr><td>D1</td><td>1</td><td>1N914</td><td>Device:D</td><td>Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal</td><td>Diode</td><td></td></tr>
+    <tr><td>J1, J2, J3, J4, J5, J6</td><td>6</td><td>Conn_01x01</td><td>Connector_Generic:Conn_01x01</td><td>Mine:Connector_1x1_1.5mm</td><td>Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)</td><td></td></tr>
+    <tr><td>LS1</td><td>1</td><td>Speaker</td><td>Device:Speaker</td><td>Mine:Connector_2x1_1.5mm</td><td>Speaker</td><td></td></tr>
+    <tr><td>Q1, Q2, Q3</td><td>3</td><td>2N3904</td><td>Transistor_BJT:2N3904</td><td>Package_TO_SOT_THT:TO-92_Inline</td><td>0.2A Ic, 40V Vce, Small Signal NPN Transistor, TO-92</td><td></td></tr>
+    <tr><td>R1</td><td>1</td><td>15k</td><td>Device:R</td><td>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</td><td>Resistor</td><td></td></tr>
+    <tr><td>R2, R18, R23, R26</td><td>4</td><td>8.2k</td><td>Device:R</td><td>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</td><td>Resistor</td><td></td></tr>
+    <tr><td>R3, R7</td><td>2</td><td>4.7M</td><td>Device:R</td><td>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</td><td>Resistor</td><td></td></tr>
+    <tr><td>R4, R6, R19, R24, R27</td><td>5</td><td>100k</td><td>Device:R</td><td>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</td><td>Resistor</td><td></td></tr>
+    <tr><td>R8</td><td>1</td><td>330k</td><td>Device:R</td><td>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</td><td>Resistor</td><td></td></tr>
+    <tr><td>R9</td><td>1</td><td>10</td><td>Device:R</td><td>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</td><td>Resistor</td><td></td></tr>
+    <tr><td>R11, R13, R16, R20, R25, R28</td><td>6</td><td>10k</td><td>Device:R</td><td>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</td><td>Resistor</td><td></td></tr>
+    <tr><td>R14</td><td>1</td><td>470</td><td>Device:R</td><td>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</td><td>Resistor</td><td></td></tr>
+    <tr><td>R17</td><td>1</td><td>1k</td><td>Device:R</td><td>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</td><td>Resistor</td><td></td></tr>
+    <tr><td>R22</td><td>1</td><td>22k</td><td>Device:R</td><td>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</td><td>Resistor</td><td></td></tr>
+    <tr><td>RV1, RV2, RV4, RV5, RV6, RV7, RV8, RV10, RV11, RV12, RV13</td><td>11</td><td>100k</td><td>Device:R_POT</td><td>Mine:Connector_3x1_1.5mm</td><td>Potentiometer</td><td></td></tr>
+    <tr><td>RV3</td><td>1</td><td>10k</td><td>Device:R_POT</td><td>Mine:Connector_3x1_1.5mm</td><td>Potentiometer</td><td></td></tr>
+    <tr><td>RV9</td><td>1</td><td>500k</td><td>Device:R_POT</td><td>Mine:Connector_3x1_1.5mm</td><td>Potentiometer</td><td></td></tr>
+    <tr><td>SW1, SW2, SW3</td><td>3</td><td>SW_SPST</td><td>Switch:SW_SPST</td><td>Mine:Connector_2x1_1.5mm</td><td>Single Pole Single Throw (SPST) switch</td><td></td></tr>
+    <tr><td>U1</td><td>1</td><td>4070</td><td>4xxx:4070</td><td>Package_DIP:DIP-14_W7.62mm_Socket</td><td>Quad Xor 2 inputs</td><td></td></tr>
+    <tr><td>U2</td><td>1</td><td>40106</td><td>4xxx:40106</td><td>Package_DIP:DIP-14_W7.62mm_Socket</td><td>Hex Schmitt trigger inverter</td><td></td></tr>
+    <tr><td>U3</td><td>1</td><td>LM358</td><td>Amplifier_Operational:LM358</td><td>Package_DIP:DIP-8_W7.62mm_Socket</td><td>Low-Power, Dual Operational Amplifiers, DIP-8/SOIC-8/TO-99-8</td><td></td></tr>
+    <tr><td>U4</td><td>1</td><td>LM386</td><td>Amplifier_Audio:LM386</td><td>Package_DIP:DIP-8_W7.62mm_Socket</td><td>Low Voltage Audio Power Amplifier, DIP-8/SOIC-8/SSOP-8</td><td></td></tr>
+    <tr><td>U5</td><td>1</td><td>NE555</td><td>Timer:NE555</td><td>Package_DIP:DIP-8_W7.62mm_Socket</td><td>Precision Timers, DIP-8/SOIC-8</td><td></td></tr><!--TABLEROW-->
+    </table>
+    </body>
+</html>
+    

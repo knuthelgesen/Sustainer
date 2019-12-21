@@ -1,0 +1,124 @@
+<html>
+  <head>
+    <title>Sustainer documentation</title>
+  </head>
+  <body>
+    <h1>Sustainer</h1>
+    <h2>Introduction</h2>
+
+    <h2>How it works</h2>
+      <h3>Overview</h3>
+        The Sustainer consists of 6 modules. There are two oscillator sections, which can make different kinds of
+        sounds. They are mixed together, and then sent to the filter, which will filter out some parts of the signal,
+        while amplifying others. The resulting signal is sent to a power amplifier which drives a speaker. There is
+        also three low frequency oscillators which can be used to change the frequency (modulate) the sound
+        oscillators.
+      <h3>Oscillator A</h3>
+          The second oscillator section consists of two Schmitt trigger oscillators, where the first one is connected to
+          the second one by a diode. This allows it to gate the second oscillator, producing interesting harmonics. This
+          only works when the first oscillator has a lower frequency then the second one, therefore it has a bigger
+          timing capacitor.
+          <h4>The Schmitt trigger oscillator</h4>
+            <p>
+              The Schmitt trigger is a type of comparator, that will compare the voltage on the input to an internal
+              reference created between the power supply and ground. The output can be eiter maximum (close to the
+              power supply) or minimum (ground), and it will high when the output is low and vice versa.
+            </p>
+            <p>
+              What makes this useful as an oscillator is that the threshold voltage is not half way between the power
+              supply and ground, but 1/3 and 2/3 of the way. When the output is already low, the input needs to drop to
+              1/3 of the power supply voltage to trigger a change, and when the output is high, the input needs to rise
+              to 2/3.
+            </p>
+            <p>
+              By connecting a capacitor between the ground and input, and a resistor between those two and the output,
+              we can use the output from the Schmitt trigger to charge the capacitor. As the capacitor is charged, it
+              will start to develop a voltage drop due to the current accumulating, and this will be sensed as the
+              input voltage of the Schmitt trigger. When the capacitor is charged enough, the input voltage will reach
+              the threshold to trigger the comparator to go low. When this happens, the capacitor will start to
+              discharge back through the resistor, and the input voltage will start to fall towards the lower threshold
+              voltage again, thus beginning the cycle again.
+            </p>
+            <p>
+              By using a variable resistor between the output and the capacitor, we can control the frequency of the
+              oscillator. Different combinations of capacitors and variable resistors can be used and will give
+              different frequency ranges. A fixed resistor to limit the frequency should also be used.
+            </p>
+          <h4>Gating the oscillator</h4>
+
+      <h3>Oscillator B</h3>
+        This oscillator section consists of a Schmitt trigger oscillator connected to a 555 timer configured as a
+        monostable multivibrator.
+        <h4>The 555</h4>
+      <h3>Mixing</h3>
+        Since the output from the two oscillator sections are square waves, the circuit uses a CD4060 XOR gate to mix
+        the signals together. This produces not only a sum of the waves, but also the sum and difference of the
+        frequencies, which sounds very interesting.
+      <h3>Filter</h3>
+        <h4>The operational amplifier</h4>
+      <h3>Amplifier</h3>
+
+      <h3>Low Frequency Oscillators</h3>
+        There are three low frequency oscillators (LFOs) that can be used to modulate the main audio oscillators. They are
+        made with Schmitt triggers, and use different timing capacitors so they have different frequency ranges. The
+        signal from the LFOs can be modified by a caacitor to make it more rounded.
+        <h4>Transistors as variable resistors</h4>
+    <h2>How to build it</h2>
+      <h3>General information</h3>
+        If you haven't soldered before, I suggest you either get someone to help you get started, or at least watch
+        some tutorials about it. It's not difficult, but it requires some practice. The IC sockets are good to begin
+        with, sice they are quite easy to solder, and difficult to destry.
+
+        Patience is key when soldering. Go slow and double check each component. Use a little solder at a time, and
+        remember that it's easier to add a little more to a joint than to remove excess solder.
+
+        I suggest you read this instruction carefully before you start and make sure you understand it. Keep it handy
+        throughout the work.
+      <h3>Soldering the PCB</h3>
+        <h4>Soldering order</h4>
+          The following soldering order is my suggestion, but you can solder in any order you like. However, generally
+          it's recommended to start with the lowest components and then do taller and taller ones.
+
+          Some components, like the ICs, transistors and some capacitors, have a specific orientation, while others
+          will work no matter which way you solder them. In some cases, like the ICs and the capacitors, soldering them
+          the wrong way can lead to damage, while others will just not work, or in the case of the potentiometers, they
+          will work oposite of what you might expect.
+          <ol>
+            <li>
+              Start with the IC sockets. Insert them and bend the leg of two corners to keep it in place, then turn the
+              PCB and solder. Pay attention to the orientation. I suggest that you solder all of them at the same time
+              to help balance the PCB.
+            </li>
+            <li>
+              Next solder the resistors, and the diode. Bend the leads and insert them flush with the PCB, then bend
+              the leads to the side to keep them in place. Trim away long leads.
+            </li>
+            <li>
+              The next components are the small ceramic capacitors. Agan insert, bend, solder and trim.
+            </li>
+            <li>
+              Transistors are next. The holes for the leads are quite close together, so be careful when soldering. You
+              also need to pay attention to the orientation.
+            </li>
+            <li>
+              Next solder the film capacitors. These are easy, just do the same as with the ceramic caps.
+            </li>
+            <li>
+              Finally, the electrolytic capacitors, from small to tall. Easy to solder, but be careful about the orientation.
+            </li>
+          </ol>
+      <h3>Soldering potentiometers, switches and other wiring</h3>
+        Here is where most mistakes are made, so be very careful when doing the wiring. Be frugal with the wire so you
+        don't run out. The color doesn't matter, but red i usually for power, and black is usually ground.
+        <h4>Soldering potentiometers</h4>
+        <h4>Replacing potentiometers with Photoresistors</h4>
+          Photoresistors are light sensitive resistors. They can be great for controlling the Sustainer, although not
+          very accurate, but this might just make them more fun. It's easy to replace most of the potentiometes with
+          photoresistors.
+          Many of the potentiometes are used as variable resistors (as opposed to voltage dividers). You can recognize
+          these by the fact that the center leg and one of the outer legs are connected. In these cases, you can simply
+          connect the photoresistor between the legs that are <b>not</b> connected in the circuit.
+          Example: You want to replace RV1 in the circuit, which is the filter cutoff controll. You need to solder the
+          leads of the photoresistor into hole 1/2 and 3, since 1 and 2 are connected.
+  </body>
+</html>

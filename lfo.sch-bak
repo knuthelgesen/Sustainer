@@ -1,0 +1,493 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 4xxx:40106 U2
+U 4 1 5DD42B22
+P 1750 3750
+F 0 "U2" H 1750 3950 50  0000 C CNN
+F 1 "40106" H 1750 3550 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 1750 3750 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/HEF40106B.pdf" H 1750 3750 50  0001 C CNN
+	4    1750 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR018
+U 1 1 5DD42B28
+P 1250 4250
+F 0 "#PWR018" H 1250 4000 50  0001 C CNN
+F 1 "GND" H 1255 4077 50  0000 C CNN
+F 2 "" H 1250 4250 50  0001 C CNN
+F 3 "" H 1250 4250 50  0001 C CNN
+	1    1250 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT RV4
+U 1 1 5DD42B2E
+P 1500 3050
+F 0 "RV4" V 1385 3050 50  0000 C CNN
+F 1 "100k" V 1500 3050 50  0000 C CNN
+F 2 "Mine:Connector_3x1_1.5mm" H 1500 3050 50  0001 C CNN
+F 3 "~" H 1500 3050 50  0001 C CNN
+	1    1500 3050
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:R R11
+U 1 1 5DD42B34
+P 2000 3050
+F 0 "R11" V 1900 3050 50  0000 C CNN
+F 1 "10k" V 2000 3050 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 1930 3050 50  0001 C CNN
+F 3 "~" H 2000 3050 50  0001 C CNN
+	1    2000 3050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1350 3050 1250 3050
+Wire Wire Line
+	1250 3050 1250 3750
+Wire Wire Line
+	1250 3750 1250 3850
+Connection ~ 1250 3750
+$Comp
+L Device:C C14
+U 1 1 5DD42B3E
+P 1250 4000
+F 0 "C14" H 1365 4046 50  0000 L CNN
+F 1 "1u" H 1365 3955 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 1288 3850 50  0001 C CNN
+F 3 "~" H 1250 4000 50  0001 C CNN
+	1    1250 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 4150 1250 4250
+Wire Wire Line
+	2050 3750 2250 3750
+Wire Wire Line
+	2250 3750 2250 3050
+Wire Wire Line
+	2250 3050 2150 3050
+Wire Wire Line
+	1650 3050 1750 3050
+Wire Wire Line
+	1750 2800 1500 2800
+Wire Wire Line
+	1500 2800 1500 2900
+Wire Wire Line
+	1750 2800 1750 3050
+Wire Wire Line
+	1750 3050 1850 3050
+Connection ~ 1750 3050
+Wire Wire Line
+	1250 3750 1450 3750
+Wire Wire Line
+	2250 3750 2350 3750
+Connection ~ 2250 3750
+$Comp
+L Switch:SW_SPST SW1
+U 1 1 5DD42B51
+P 2350 4050
+F 0 "SW1" V 2304 4148 50  0000 L CNN
+F 1 "SW_SPST" V 2395 4148 50  0000 L CNN
+F 2 "Mine:Connector_2x1_1.5mm" H 2350 4050 50  0001 C CNN
+F 3 "~" H 2350 4050 50  0001 C CNN
+	1    2350 4050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2350 3750 2350 3850
+Wire Wire Line
+	2350 4250 2350 4350
+Connection ~ 2350 3750
+$Comp
+L power:GND #PWR019
+U 1 1 5DD42B61
+P 2350 4750
+F 0 "#PWR019" H 2350 4500 50  0001 C CNN
+F 1 "GND" H 2355 4577 50  0000 C CNN
+F 2 "" H 2350 4750 50  0001 C CNN
+F 3 "" H 2350 4750 50  0001 C CNN
+	1    2350 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4xxx:40106 U?
+U 5 1 5DD5304C
+P 4200 3700
+AR Path="/5DD5304C" Ref="U?"  Part="1" 
+AR Path="/5DD240F4/5DD5304C" Ref="U2"  Part="5" 
+F 0 "U2" H 4200 3900 50  0000 C CNN
+F 1 "40106" H 4200 3500 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 4200 3700 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/HEF40106B.pdf" H 4200 3700 50  0001 C CNN
+	5    4200 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DD53052
+P 3700 4200
+AR Path="/5DD53052" Ref="#PWR?"  Part="1" 
+AR Path="/5DD240F4/5DD53052" Ref="#PWR020"  Part="1" 
+F 0 "#PWR020" H 3700 3950 50  0001 C CNN
+F 1 "GND" H 3705 4027 50  0000 C CNN
+F 2 "" H 3700 4200 50  0001 C CNN
+F 3 "" H 3700 4200 50  0001 C CNN
+	1    3700 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT RV?
+U 1 1 5DD53058
+P 3950 3000
+AR Path="/5DD53058" Ref="RV?"  Part="1" 
+AR Path="/5DD240F4/5DD53058" Ref="RV5"  Part="1" 
+F 0 "RV5" V 3835 3000 50  0000 C CNN
+F 1 "100k" V 3950 3000 50  0000 C CNN
+F 2 "Mine:Connector_3x1_1.5mm" H 3950 3000 50  0001 C CNN
+F 3 "~" H 3950 3000 50  0001 C CNN
+	1    3950 3000
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5DD5305E
+P 4450 3000
+AR Path="/5DD5305E" Ref="R?"  Part="1" 
+AR Path="/5DD240F4/5DD5305E" Ref="R13"  Part="1" 
+F 0 "R13" V 4350 3000 50  0000 C CNN
+F 1 "10k" V 4450 3000 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4380 3000 50  0001 C CNN
+F 3 "~" H 4450 3000 50  0001 C CNN
+	1    4450 3000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3800 3000 3700 3000
+Wire Wire Line
+	3700 3000 3700 3700
+Wire Wire Line
+	3700 3700 3700 3800
+Connection ~ 3700 3700
+$Comp
+L Device:C C?
+U 1 1 5DD53068
+P 3700 3950
+AR Path="/5DD53068" Ref="C?"  Part="1" 
+AR Path="/5DD240F4/5DD53068" Ref="C16"  Part="1" 
+F 0 "C16" H 3815 3996 50  0000 L CNN
+F 1 "10u" H 3815 3905 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 3738 3800 50  0001 C CNN
+F 3 "~" H 3700 3950 50  0001 C CNN
+	1    3700 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 4100 3700 4200
+Wire Wire Line
+	4500 3700 4700 3700
+Wire Wire Line
+	4700 3700 4700 3000
+Wire Wire Line
+	4700 3000 4600 3000
+Wire Wire Line
+	4100 3000 4200 3000
+Wire Wire Line
+	4200 2750 3950 2750
+Wire Wire Line
+	3950 2750 3950 2850
+Wire Wire Line
+	4200 2750 4200 3000
+Wire Wire Line
+	4200 3000 4300 3000
+Connection ~ 4200 3000
+Wire Wire Line
+	3700 3700 3900 3700
+Wire Wire Line
+	4700 3700 4800 3700
+Connection ~ 4700 3700
+$Comp
+L Device:R R?
+U 1 1 5DD5307B
+P 4950 3700
+AR Path="/5DD5307B" Ref="R?"  Part="1" 
+AR Path="/5DD240F4/5DD5307B" Ref="R14"  Part="1" 
+F 0 "R14" V 4850 3700 50  0000 C CNN
+F 1 "470" V 4950 3700 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4880 3700 50  0001 C CNN
+F 3 "~" H 4950 3700 50  0001 C CNN
+	1    4950 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_SPST SW?
+U 1 1 5DD53081
+P 5200 4000
+AR Path="/5DD53081" Ref="SW?"  Part="1" 
+AR Path="/5DD240F4/5DD53081" Ref="SW2"  Part="1" 
+F 0 "SW2" V 5154 4098 50  0000 L CNN
+F 1 "SW_SPST" V 5245 4098 50  0000 L CNN
+F 2 "Mine:Connector_2x1_1.5mm" H 5200 4000 50  0001 C CNN
+F 3 "~" H 5200 4000 50  0001 C CNN
+	1    5200 4000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5100 3700 5200 3700
+Wire Wire Line
+	5200 3700 5200 3800
+Connection ~ 5200 3700
+Wire Wire Line
+	5200 4200 5200 4300
+$Comp
+L power:GND #PWR?
+U 1 1 5DD53093
+P 5200 4700
+AR Path="/5DD53093" Ref="#PWR?"  Part="1" 
+AR Path="/5DD240F4/5DD53093" Ref="#PWR021"  Part="1" 
+F 0 "#PWR021" H 5200 4450 50  0001 C CNN
+F 1 "GND" H 5205 4527 50  0000 C CNN
+F 2 "" H 5200 4700 50  0001 C CNN
+F 3 "" H 5200 4700 50  0001 C CNN
+	1    5200 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4xxx:40106 U?
+U 6 1 5DD6B8EB
+P 7100 3700
+AR Path="/5DD6B8EB" Ref="U?"  Part="1" 
+AR Path="/5DD240F4/5DD6B8EB" Ref="U2"  Part="6" 
+F 0 "U2" H 7100 3900 50  0000 C CNN
+F 1 "40106" H 7100 3500 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 7100 3700 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/HEF40106B.pdf" H 7100 3700 50  0001 C CNN
+	6    7100 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DD6B8F1
+P 6600 4200
+AR Path="/5DD6B8F1" Ref="#PWR?"  Part="1" 
+AR Path="/5DD240F4/5DD6B8F1" Ref="#PWR022"  Part="1" 
+F 0 "#PWR022" H 6600 3950 50  0001 C CNN
+F 1 "GND" H 6605 4027 50  0000 C CNN
+F 2 "" H 6600 4200 50  0001 C CNN
+F 3 "" H 6600 4200 50  0001 C CNN
+	1    6600 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT RV?
+U 1 1 5DD6B8F7
+P 6850 3000
+AR Path="/5DD6B8F7" Ref="RV?"  Part="1" 
+AR Path="/5DD240F4/5DD6B8F7" Ref="RV6"  Part="1" 
+F 0 "RV6" V 6735 3000 50  0000 C CNN
+F 1 "100k" V 6850 3000 50  0000 C CNN
+F 2 "Mine:Connector_3x1_1.5mm" H 6850 3000 50  0001 C CNN
+F 3 "~" H 6850 3000 50  0001 C CNN
+	1    6850 3000
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5DD6B8FD
+P 7350 3000
+AR Path="/5DD6B8FD" Ref="R?"  Part="1" 
+AR Path="/5DD240F4/5DD6B8FD" Ref="R16"  Part="1" 
+F 0 "R16" V 7250 3000 50  0000 C CNN
+F 1 "10k" V 7350 3000 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 7280 3000 50  0001 C CNN
+F 3 "~" H 7350 3000 50  0001 C CNN
+	1    7350 3000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6700 3000 6600 3000
+Wire Wire Line
+	6600 3000 6600 3700
+Wire Wire Line
+	6600 3700 6600 3800
+Connection ~ 6600 3700
+$Comp
+L Device:C C?
+U 1 1 5DD6B907
+P 6600 3950
+AR Path="/5DD6B907" Ref="C?"  Part="1" 
+AR Path="/5DD240F4/5DD6B907" Ref="C18"  Part="1" 
+F 0 "C18" H 6715 3996 50  0000 L CNN
+F 1 "22u" H 6715 3905 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 6638 3800 50  0001 C CNN
+F 3 "~" H 6600 3950 50  0001 C CNN
+	1    6600 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 4100 6600 4200
+Wire Wire Line
+	7400 3700 7600 3700
+Wire Wire Line
+	7600 3700 7600 3000
+Wire Wire Line
+	7600 3000 7500 3000
+Wire Wire Line
+	7000 3000 7100 3000
+Wire Wire Line
+	7100 2750 6850 2750
+Wire Wire Line
+	6850 2750 6850 2850
+Wire Wire Line
+	7100 2750 7100 3000
+Wire Wire Line
+	7100 3000 7200 3000
+Connection ~ 7100 3000
+Wire Wire Line
+	6600 3700 6800 3700
+Wire Wire Line
+	7600 3700 7700 3700
+Connection ~ 7600 3700
+$Comp
+L Device:CP C?
+U 1 1 5DD6B91A
+P 8100 4450
+AR Path="/5DD6B91A" Ref="C?"  Part="1" 
+AR Path="/5DD240F4/5DD6B91A" Ref="C19"  Part="1" 
+F 0 "C19" H 8218 4496 50  0000 L CNN
+F 1 "220u" H 8218 4405 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 8138 4300 50  0001 C CNN
+F 3 "~" H 8100 4450 50  0001 C CNN
+	1    8100 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5DD6B920
+P 7850 3700
+AR Path="/5DD6B920" Ref="R?"  Part="1" 
+AR Path="/5DD240F4/5DD6B920" Ref="R17"  Part="1" 
+F 0 "R17" V 7643 3700 50  0000 C CNN
+F 1 "1k" V 7734 3700 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 7780 3700 50  0001 C CNN
+F 3 "~" H 7850 3700 50  0001 C CNN
+	1    7850 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_SPST SW?
+U 1 1 5DD6B926
+P 8100 4000
+AR Path="/5DD6B926" Ref="SW?"  Part="1" 
+AR Path="/5DD240F4/5DD6B926" Ref="SW3"  Part="1" 
+F 0 "SW3" V 8054 4098 50  0000 L CNN
+F 1 "SW_SPST" V 8145 4098 50  0000 L CNN
+F 2 "Mine:Connector_2x1_1.5mm" H 8100 4000 50  0001 C CNN
+F 3 "~" H 8100 4000 50  0001 C CNN
+	1    8100 4000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8100 4300 8100 4200
+Wire Wire Line
+	8000 3700 8100 3700
+Wire Wire Line
+	8100 3800 8100 3700
+$Comp
+L power:GND #PWR?
+U 1 1 5DD6B937
+P 8100 4700
+AR Path="/5DD6B937" Ref="#PWR?"  Part="1" 
+AR Path="/5DD240F4/5DD6B937" Ref="#PWR023"  Part="1" 
+F 0 "#PWR023" H 8100 4450 50  0001 C CNN
+F 1 "GND" H 8105 4527 50  0000 C CNN
+F 2 "" H 8100 4700 50  0001 C CNN
+F 3 "" H 8100 4700 50  0001 C CNN
+	1    8100 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 4700 8100 4600
+$Comp
+L Device:CP C15
+U 1 1 5DD736BB
+P 2350 4500
+F 0 "C15" H 2468 4546 50  0000 L CNN
+F 1 "220u" H 2468 4455 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 2388 4350 50  0001 C CNN
+F 3 "~" H 2350 4500 50  0001 C CNN
+	1    2350 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 4650 2350 4750
+$Comp
+L Device:CP C17
+U 1 1 5DD790F4
+P 5200 4450
+F 0 "C17" H 5318 4496 50  0000 L CNN
+F 1 "220u" H 5318 4405 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 5238 4300 50  0001 C CNN
+F 3 "~" H 5200 4450 50  0001 C CNN
+	1    5200 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 4600 5200 4700
+$Comp
+L Connector_Generic:Conn_01x01 J2
+U 1 1 5DD7B8A1
+P 5650 3700
+F 0 "J2" H 5730 3742 50  0000 L CNN
+F 1 "Conn_01x01" H 5730 3651 50  0000 L CNN
+F 2 "Mine:Connector_1x1_1.5mm" H 5650 3700 50  0001 C CNN
+F 3 "~" H 5650 3700 50  0001 C CNN
+	1    5650 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J1
+U 1 1 5DD8FB64
+P 2750 3750
+F 0 "J1" H 2830 3792 50  0000 L CNN
+F 1 "Conn_01x01" H 2830 3701 50  0000 L CNN
+F 2 "Mine:Connector_1x1_1.5mm" H 2750 3750 50  0001 C CNN
+F 3 "~" H 2750 3750 50  0001 C CNN
+	1    2750 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J3
+U 1 1 5DD90F3F
+P 8500 3700
+F 0 "J3" H 8580 3742 50  0000 L CNN
+F 1 "Conn_01x01" H 8580 3651 50  0000 L CNN
+F 2 "Mine:Connector_1x1_1.5mm" H 8500 3700 50  0001 C CNN
+F 3 "~" H 8500 3700 50  0001 C CNN
+	1    8500 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 3750 2550 3750
+Wire Wire Line
+	5200 3700 5450 3700
+Wire Wire Line
+	8100 3700 8300 3700
+Connection ~ 8100 3700
+$EndSCHEMATC
