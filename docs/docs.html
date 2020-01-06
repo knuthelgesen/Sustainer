@@ -66,7 +66,7 @@
             <h4>Gating the oscillator</h4>
             <figure class="right"><img src="img/gated_oscillator.png"><figcaption>One oscillator gating another</figcaption></figure>
             <p>
-              By connecting another oscillator to the first one using a diode like, 
+              By connecting another oscillator to the first one using a diode like,
             </p>
           </section>
         </section>
@@ -125,6 +125,80 @@
         <section>
           <h3>Soldering the PCB</h3>
           <section>
+            <h4>Identifying the different components on the PCB</h4>
+            <p>
+              The PCB has several types of components, and they are marked with a code consisting of one or two letters
+              and numbers. The letter(s) indicate the type of component, and the number is simply a numbering for each
+              one. Here is a list of the components used on the Sustainer PCB, and their corresponding identification
+              letter. The list is in alphabetical order. Some of the components are not soldered directly to the PCB,
+              this is indicated in the table.
+            </p>
+            <div role="grid" class="grid-container">
+              <div role="row" class="grid-row grid-header">
+                <div role="columnheader">Letter</div>
+                <div role="columnheader">Component type</div>
+                <div role="columnheader">Notes</div>
+              </div>
+              <div role="row" class="grid-row">
+                <div role="gridcell">BT</div>
+                <div role="gridcell">Battery</div>
+                <div role="gridcell">Has orientation. Connect using wires.</div>
+              </div>
+              <div role="row" class="grid-row">
+                <div role="gridcell">D</div>
+                <div role="gridcell">Diode</div>
+                <div role="gridcell">Has orientation.</div>
+              </div>
+              <div role="row" class="grid-row">
+                <div role="gridcell">C</div>
+                <div role="columnheader">Capacitor</div>
+                <div role="columnheader">
+                  There are three types used; ceramics, which are small and orange/brown; electrolytic, which looks
+                  like metal cans; and film, which are bright red cubes. The electrolytics have orientation, the others
+                  not, it will be marked on the board.</div>
+              </div>
+              <div role="row" class="grid-row">
+                <div role="gridcell">GND</div>
+                <div role="columnheader">Ground</div>
+                <div role="columnheader">Gives access to circuit ground, useful when debugging or modifying.</div>
+              </div>
+              <div role="row" class="grid-row">
+                <div role="gridcell">J</div>
+                <div role="columnheader">Connection between LFO and oscillators</div>
+                <div role="columnheader">Connect the LFOs to the oscillators with wires.</div>
+              </div>
+              <div role="row" class="grid-row">
+                <div role="gridcell">LS</div>
+                <div role="columnheader">Loudspeaker</div>
+                <div role="columnheader">No orientation. Connect using wires.</div>
+              </div>
+              <div role="row" class="grid-row">
+                <div role="gridcell">R</div>
+                <div role="columnheader">Resitor</div>
+                <div role="columnheader">No orientation.</div>
+              </div>
+              <div role="row" class="grid-row">
+                <div role="gridcell">RV</div>
+                <div role="columnheader">Potentiometer</div>
+                <div role="columnheader">
+                  Has orientation. Connect using wires. Can be replaced with photoresistor.
+                </div>
+              </div>
+              <div role="row" class="grid-row">
+                <div role="gridcell">SW</div>
+                <div role="columnheader">Switch</div>
+                <div role="columnheader">
+                  Has orientation. Connect using wires.
+                </div>
+              </div>
+              <div role="row" class="grid-row">
+                <div role="gridcell">U</div>
+                <div role="columnheader">Integrated circuit</div>
+                <div role="columnheader">Has orientation. Use socket.</div>
+              </div>
+            </div>
+          </section>
+          <section>
             <h4>Soldering order</h4>
             <p>
               The following soldering order is my suggestion, but you can solder in any order you like. However, generally
@@ -177,17 +251,26 @@
                 to prevent them from turning, but I find that they get are more a hinder than a help. They can be
                 removed easily by grabbing them with a plier and simply twisted off.
               </p>
+              <section>
+                <h5>Replacing potentiometers with Photoresistors</h5>
+                  Photoresistors are light sensitive resistors. They can be great for controlling the Sustainer, although not
+                  very accurate, but this might just make them more fun. It's easy to replace most of the potentiometers with
+                  photoresistors.
+                  Many of the potentiometes are used as variable resistors (as opposed to voltage dividers). You can recognize
+                  these by the fact that the center leg and one of the outer legs are connected. In these cases, you can simply
+                  connect the photoresistor between the legs that are <b>not</b> connected in the circuit.
+                  Example: You want to replace RV1 in the circuit, which is the filter cutoff controll. You need to solder the
+                  leads of the photoresistor into hole 1/2 and 3, since 1 and 2 are connected.
+              </section>
             </section>
             <section>
-              <h4>Replacing potentiometers with Photoresistors</h4>
-                Photoresistors are light sensitive resistors. They can be great for controlling the Sustainer, although not
-                very accurate, but this might just make them more fun. It's easy to replace most of the potentiometers with
-                photoresistors.
-                Many of the potentiometes are used as variable resistors (as opposed to voltage dividers). You can recognize
-                these by the fact that the center leg and one of the outer legs are connected. In these cases, you can simply
-                connect the photoresistor between the legs that are <b>not</b> connected in the circuit.
-                Example: You want to replace RV1 in the circuit, which is the filter cutoff controll. You need to solder the
-                leads of the photoresistor into hole 1/2 and 3, since 1 and 2 are connected.
+              <h4>Connecting the LFOs to the oscillators</h4>
+              <p>
+                The low frequency oscillators are used to modulate the audio oscillator. They are made using three of
+                the six units inside the CD40106 (U2). In order to connect them to the oscillators, cables must be used
+                across the board. The connectors J1, J2 and J3 are the LFO outputs, and they can be connected to J4, J5
+                and J6 however you like. They have somewhat different frequency range.
+              </p>
             </section>
         </section>
       </section>

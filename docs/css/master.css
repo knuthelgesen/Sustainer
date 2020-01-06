@@ -11,3 +11,24 @@ figure.right {
 figure.right img {
   max-width: 27em;
 }
+
+div.grid-container {
+  display: grid;
+  background-color: lightgray;
+}
+
+div.grid-row {
+  display: grid;
+  grid-template-columns: 10em 20em 30em;
+  border-style: solid;
+  border-width: 1px 1px 0px 0px
+}
+
+div.grid-row div {
+  border-style: solid;
+  border-width: 0px 0px 0px 1px
+}
+
+div.grid-header div {
+  font-weight: bold;
+}
