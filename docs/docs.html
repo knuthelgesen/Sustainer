@@ -151,50 +151,55 @@
               </div>
               <div role="row" class="grid-row">
                 <div role="gridcell">C</div>
-                <div role="columnheader">Capacitor</div>
-                <div role="columnheader">
+                <div role="gridcell">Capacitor</div>
+                <div role="gridcell">
                   There are three types used; ceramics, which are small and orange/brown; electrolytic, which looks
                   like metal cans; and film, which are bright red cubes. The electrolytics have orientation, the others
                   not, it will be marked on the board.</div>
               </div>
               <div role="row" class="grid-row">
                 <div role="gridcell">GND</div>
-                <div role="columnheader">Ground</div>
-                <div role="columnheader">Gives access to circuit ground, useful when debugging or modifying.</div>
+                <div role="gridcell">Ground</div>
+                <div role="gridcell">Gives access to circuit ground, useful when debugging or modifying.</div>
               </div>
               <div role="row" class="grid-row">
                 <div role="gridcell">J</div>
-                <div role="columnheader">Connection between LFO and oscillators</div>
-                <div role="columnheader">Connect the LFOs to the oscillators with wires.</div>
+                <div role="gridcell">Connection between LFO and oscillators</div>
+                <div role="gridcell">Connect the LFOs to the oscillators with wires.</div>
               </div>
               <div role="row" class="grid-row">
                 <div role="gridcell">LS</div>
-                <div role="columnheader">Loudspeaker</div>
-                <div role="columnheader">No orientation. Connect using wires.</div>
+                <div role="gridcell">Loudspeaker</div>
+                <div role="gridcell">No orientation. Connect using wires.</div>
+              </div>
+              <div role="row" class="grid-row">
+                <div role="gridcell">Q</div>
+                <div role="gridcell">Transistor</div>
+                <div role="gridcell">Has orientation.</div>
               </div>
               <div role="row" class="grid-row">
                 <div role="gridcell">R</div>
-                <div role="columnheader">Resitor</div>
-                <div role="columnheader">No orientation.</div>
+                <div role="gridcell">Resitor</div>
+                <div role="gridcell">No orientation.</div>
               </div>
               <div role="row" class="grid-row">
                 <div role="gridcell">RV</div>
-                <div role="columnheader">Potentiometer</div>
-                <div role="columnheader">
+                <div role="gridcell">Potentiometer</div>
+                <div role="gridcell">
                   Has orientation. Connect using wires. Can be replaced with photoresistor.
                 </div>
               </div>
               <div role="row" class="grid-row">
                 <div role="gridcell">SW</div>
-                <div role="columnheader">Switch</div>
-                <div role="columnheader">
+                <div role="gridcell">Switch</div>
+                <div role="gridcell">
                   Has orientation. Connect using wires.
                 </div>
               </div>
               <div role="row" class="grid-row">
                 <div role="gridcell">U</div>
-                <div role="columnheader">Integrated circuit</div>
-                <div role="columnheader">Has orientation. Use socket.</div>
+                <div role="gridcell">Integrated circuit</div>
+                <div role="gridcell">Has orientation. Use socket.</div>
               </div>
             </div>
           </section>
@@ -212,24 +217,27 @@
               <li>
                 Start with the IC sockets. Insert them and bend the leg of two corners to keep it in place, then turn the
                 PCB and solder. Pay attention to the orientation. I suggest that you solder all of them at the same time
-                to help balance the PCB.
+                to help balance the PCB. The pads are marked with U*.
               </li>
               <li>
                 Next solder the resistors, and the diode. Bend the leads and insert them flush with the PCB, then bend
-                the leads to the side to keep them in place. Trim away long leads.
+                the leads to the side to keep them in place. Trim away long leads. The pads are marked with R*.
               </li>
               <li>
-                The next components are the small ceramic capacitors. Agan insert, bend, solder and trim.
+                The next components are the small ceramic capacitors. Agan insert, bend, solder and trim.  The pads are
+                marked with C*.
               </li>
               <li>
                 Transistors are next. The holes for the leads are quite close together, so be careful when soldering. You
-                also need to pay attention to the orientation.
+                also need to pay attention to the orientation. The pads are marked with Q*.
               </li>
               <li>
-                Next solder the film capacitors. These are easy, just do the same as with the ceramic caps.
+                Next solder the film capacitors. These are easy, just do the same as with the ceramic caps.  The pads are
+                marked with C*.
               </li>
               <li>
-                Finally, the electrolytic capacitors, from small to tall. Easy to solder, but be careful about the orientation.
+                Finally, the electrolytic capacitors, from small to tall. Easy to solder, but be careful about the
+                orientation. The pads are marked with C*.
               </li>
             </ol>
           </section>
@@ -244,7 +252,7 @@
               <figure class="right"><img src="img/potentiometer_pins.jpg"><figcaption>The order of the pins</figcaption></figure>
               <p>
                 The PCB markings indicates which hole should be connected to pin 1, 2 and 3 of the potentiometers. See
-                the image to match them.
+                the image to match them. Solder them to the PCB pads marked with RV*.
               </p>
               <p>
                 The potentiometers also have a small tab which is inserted into a smaller hole
