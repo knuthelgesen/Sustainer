@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 7
+Sheet 1 8
 Title ""
 Date ""
 Rev ""
@@ -54,15 +54,15 @@ $EndComp
 $Sheet
 S 1400 2400 1600 900 
 U 5DF0C79D
-F0 "Oscillator1" 50
-F1 "oscillator1.sch" 50
+F0 "Oscillator B" 50
+F1 "oscillator_b.sch" 50
 F2 "output" I R 3000 2850 50 
 $EndSheet
 $Sheet
 S 1400 3700 1600 900 
 U 5DF1923D
-F0 "Oscillator2" 50
-F1 "oscillator2.sch" 50
+F0 "Oscillator A" 50
+F1 "oscillator_a.sch" 50
 F2 "output" I R 3000 4150 50 
 $EndSheet
 Wire Wire Line
@@ -81,4 +81,10 @@ Wire Wire Line
 	5350 3500 4750 3500
 Wire Wire Line
 	6650 3500 7300 3500
+$Sheet
+S 6550 1000 2400 1000
+U 5DFFF192
+F0 "Examples" 50
+F1 "examples.sch" 50
+$EndSheet
 $EndSCHEMATC

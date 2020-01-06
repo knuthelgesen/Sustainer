@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 7
+Sheet 3 8
 Title ""
 Date ""
 Rev ""
@@ -303,22 +303,9 @@ Wire Wire Line
 	3900 2700 3800 2700
 Wire Wire Line
 	3550 2700 3500 2700
-Wire Wire Line
-	3400 2700 3400 2800
 Connection ~ 3500 2700
 Wire Wire Line
 	3500 2700 3400 2700
-$Comp
-L power:GND #PWR07
-U 1 1 5DAFE404
-P 3400 2800
-F 0 "#PWR07" H 3400 2550 50  0001 C CNN
-F 1 "GND" H 3405 2627 50  0000 C CNN
-F 2 "" H 3400 2800 50  0001 C CNN
-F 3 "" H 3400 2800 50  0001 C CNN
-	1    3400 2800
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:C C9
 U 1 1 5DACBD38
@@ -330,4 +317,9 @@ F 3 "~" H 5300 4050 50  0001 C CNN
 	1    5300 4050
 	0    1    1    0   
 $EndComp
+Wire Wire Line
+	3400 4150 3850 4150
+Wire Wire Line
+	3400 2700 3400 4150
+Connection ~ 3850 4150
 $EndSCHEMATC

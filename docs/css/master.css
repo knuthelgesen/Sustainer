@@ -7,3 +7,7 @@ body {
 figure.right {
   float: right;
 }
+
+figure.right img {
+  max-width: 27em;
+}
