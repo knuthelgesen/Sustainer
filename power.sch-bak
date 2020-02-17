@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 8
+Sheet 2 7
 Title ""
 Date ""
 Rev ""
@@ -124,7 +124,7 @@ Wire Wire Line
 Wire Wire Line
 	5400 2300 5400 2400
 Wire Wire Line
-	1500 1400 2100 1400
+	1500 1400 1600 1400
 Wire Wire Line
 	1500 2600 2100 2600
 $Comp
@@ -253,4 +253,17 @@ Wire Wire Line
 Connection ~ 4300 2600
 Wire Wire Line
 	4300 2600 4800 2600
+$Comp
+L Switch:SW_SPST SW4
+U 1 1 5E203D92
+P 1800 1400
+F 0 "SW4" H 1800 1635 50  0000 C CNN
+F 1 "SW_SPST" H 1800 1544 50  0000 C CNN
+F 2 "" H 1800 1400 50  0001 C CNN
+F 3 "~" H 1800 1400 50  0001 C CNN
+	1    1800 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 1400 2100 1400
 $EndSCHEMATC

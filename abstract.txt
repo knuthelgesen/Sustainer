@@ -1,0 +1,21 @@
+Build an analog synthesizer - for beginners
+
+There has never been a better time to get into music DIY. With modern components and Eurorack standards, it's easier than ever to create interesting and musical devices. However, the world of electronics and music can be daunting for beginners.
+
+In this workshop we will teach the basics of electronics and synthesizer design. To keep it old-school, we will focus on analog electronics, and to keep it manageable we will make a "non-musical" synthesizer. In other words a noisy box perfect for creating interesting sound effects and alerting your colleagues of impending meetings. We will build the different parts of the synthesizer on breadboard to get an understand of how they work, and the students will get a PCB to solder permanently. Parts will be provided.
+
+The workshop will be 3 hours.
+
+We will cover:
+- Basic electronics and use of prototyping tools
+- Basic signal processing
+- Basic synthesizer design
+
+What you will need to bring:
+- Nothing
+
+Nice to have:
+- A laptop with KiCad installed, and https://github.com/knuthelgesen/Sustainer cloned
+- Basic electronics skills are helpfull, but the course is designed for beginners
+
+

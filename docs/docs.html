@@ -35,7 +35,9 @@
           </p>
           <section>
             <h4>The Schmitt trigger oscillator</h4>
-            <figure class="right"><img src="img/simple_oscillator.png"><figcaption>A very simple oscillator</figcaption></figure>
+            <figure class="right">
+              <img src="img/simple_oscillator.png"><figcaption>A very simple oscillator</figcaption>
+            </figure>
             <p>
               The Schmitt trigger is a type of comparator, that will compare the voltage on the input to an internal
               reference created between the power supply and ground. The output can be eiter maximum (close to the
@@ -64,9 +66,15 @@
           </section>
           <section>
             <h4>Gating the oscillator</h4>
-            <figure class="right"><img src="img/gated_oscillator.png"><figcaption>One oscillator gating another</figcaption></figure>
+            <figure class="right">
+              <img src="img/gated_oscillator.png"><figcaption>One oscillator gating another</figcaption>
+            </figure>
             <p>
-              By connecting another oscillator to the first one using a diode like,
+              By connecting another oscillator to the first one using a diode in the figure, the oscillator on the left
+              will turn on and off the oscillator on the right. This is called gating, and when done with an oscillator
+              that makes audible waves, it adds interesting harmonics to the sound of the second oscillator. This works
+              best if the gating oscillator has lower frequency than the oscillator being gated, therefore we make the
+              timing capacitor larger.
             </p>
           </section>
         </section>
@@ -78,6 +86,19 @@
           </p>
           <section>
             <h4>The 555</h4>
+            <p>
+              The 555 is a timing IC produced by several companies, and it's very popular for oscillators, timers and
+              related applications. It was fist made in 1972 and is one of the most manufactured ICs ever. It can be
+              used in several ways, and we will use it in the monostable mode.
+            </p>
+            <p>
+              The 555 has a trigger pin where it listens for input to fall below 1/3 of supply voltage. When this
+              happens the output will go high, and it will stay high for a time determined by the resistor and
+              capacitor connected to discharge and threshold. As one of the resistors is a potentimeter, we can change
+              this time. While the output is high, the 555 will ignore any changes on the trigger pin. So if we connect
+              the oscillator to the trigger of the 555, it can be used to create a step-down effect. The tone will not
+              change, but it will step down octaves.
+            </p>
           </section>
         </section>
         <section>
@@ -96,6 +117,12 @@
         </section>
         <section>
           <h3>Amplifier</h3>
+          <p>
+            The amplifier used to drive the speaker, is the classic LM386. It's a very common IC, especially in DIY
+            circuits, being cheap, easy to use and difficult to destroy. The chip can not drive a big speaker, but it's
+            perfect for these kinds of noise makers. The amplifier circuit is more or less directly taken from the
+            datasheet. Notice the capacitor on the input and output to remove DC from the signal.
+          </p>
         </section>
         <section>
           <h3>Low Frequency Oscillators</h3>
@@ -193,7 +220,7 @@
                 <div role="gridcell">SW</div>
                 <div role="gridcell">Switch</div>
                 <div role="gridcell">
-                  Has orientation. Connect using wires.
+                  No orientation. Connect using wires.
                 </div>
               </div>
               <div role="row" class="grid-row">
@@ -247,7 +274,7 @@
             Here is where most mistakes are made, so be very careful when doing the wiring. Be frugal with the wire so you
             don't run out. The color doesn't matter, but red i usually for power, and black is usually ground.
             <section>
-              <h4>Soldering potentiometers</h4>
+              <h4>Soldering potentiometers (Marked RV)</h4>
               <figure class="right"><img src="img/potentiometer_tab.jpg"><figcaption>You can remove this tab</figcaption></figure>
               <figure class="right"><img src="img/potentiometer_pins.jpg"><figcaption>The order of the pins</figcaption></figure>
               <p>
@@ -264,7 +291,7 @@
                   Photoresistors are light sensitive resistors. They can be great for controlling the Sustainer, although not
                   very accurate, but this might just make them more fun. It's easy to replace most of the potentiometers with
                   photoresistors.
-                  Many of the potentiometes are used as variable resistors (as opposed to voltage dividers). You can recognize
+                  Many of the potentiometers are used as variable resistors (as opposed to voltage dividers). You can recognize
                   these by the fact that the center leg and one of the outer legs are connected. In these cases, you can simply
                   connect the photoresistor between the legs that are <b>not</b> connected in the circuit.
                   Example: You want to replace RV1 in the circuit, which is the filter cutoff controll. You need to solder the
@@ -272,12 +299,38 @@
               </section>
             </section>
             <section>
-              <h4>Connecting the LFOs to the oscillators</h4>
+              <h4>Soldering the switches (Marked SW)</h4>
+              <p>
+                The schematic calls for four SPST (Single Pole Single Throw) switches, but the switches you have
+                received might be SPDT (Single Pole Double Throw) instead. These have three terminals, and you can use
+                the center one and one of the outer ones to use the switch as a SPST. Either outer terminal can be
+                used, and leave the unused one unconnected.
+              </p>
+              <p>
+                Three of the switches will be connected to the PCB with two wires, and the last one will be between the
+                9V side of the battery holder and the PCB, and will act as the power switch. The switches are not
+                polarized, so you can connect them in any orientation.
+              </p>
+            </section>
+            <section>
+              <h4>Battery (Marked BAT) and Loudspeaker (Marked LS)</h4>
+              <p>
+                Connect the positive side of the battery holder to a switch as described above, and the other terminal
+                of the switch to the 9V pad on the  PCB. Connect the negative side of the battery holder to the GND
+                pad.
+              </p>
+              <p>
+                Connect the loudspeaker to the PCB using wires. The louspeaker is not polarized, so the orientation
+                does not matter.
+              </p>
+            </section>
+            <section>
+              <h4>Connecting the LFOs to the oscillators (Marked J)</h4>
               <p>
                 The low frequency oscillators are used to modulate the audio oscillator. They are made using three of
                 the six units inside the CD40106 (U2). In order to connect them to the oscillators, cables must be used
                 across the board. The connectors J1, J2 and J3 are the LFO outputs, and they can be connected to J4, J5
-                and J6 however you like. They have somewhat different frequency range.
+                and J6 however you like. They have somewhat different frequency range, but are otherwise the same.
               </p>
             </section>
         </section>

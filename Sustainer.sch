@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 8
+Sheet 1 7
 Title ""
 Date ""
 Rev ""
@@ -81,10 +81,4 @@ Wire Wire Line
 	5350 3500 4750 3500
 Wire Wire Line
 	6650 3500 7300 3500
-$Sheet
-S 6550 1000 2400 1000
-U 5DFFF192
-F0 "Examples" 50
-F1 "examples.sch" 50
-$EndSheet
 $EndSCHEMATC

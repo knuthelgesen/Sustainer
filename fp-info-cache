@@ -1,4 +1,4 @@
-16917399007824110
+16920565167600110
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -51337,6 +51337,20 @@ Connector_3x1_1.5mm
 0
 3
 3
+Mine
+Connector_3x2_1.5mm
+
+
+0
+6
+6
+Mine
+Connector_4x1_1.5mm
+
+
+0
+4
+4
 Mine
 Pad
 

@@ -290,4 +290,8 @@ F 3 "~" H 5150 1500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5300 1500 5400 1500
+Text Notes 5650 650  0    50   ~ 0
+Gated oscillator
+Text Notes 4150 650  0    50   ~ 0
+Gating oscillator
 $EndSCHEMATC
