@@ -207,13 +207,9 @@ Wire Wire Line
 Wire Wire Line
 	3250 3950 3850 3950
 Connection ~ 3850 3950
-Wire Wire Line
-	5150 4050 4650 4050
 Connection ~ 4650 4050
 Text HLabel 6200 4050 2    50   Output ~ 0
 output
-Wire Wire Line
-	6200 4050 5450 4050
 $Comp
 L Device:C C8
 U 1 1 5DACDD21
@@ -306,20 +302,11 @@ Wire Wire Line
 Connection ~ 3500 2700
 Wire Wire Line
 	3500 2700 3400 2700
-$Comp
-L Device:C C9
-U 1 1 5DACBD38
-P 5300 4050
-F 0 "C9" V 5150 4050 50  0000 C CNN
-F 1 "1u" V 5450 4050 50  0000 C CNN
-F 2 "Capacitor_THT:C_Rect_L7.2mm_W7.2mm_P5.00mm_FKS2_FKP2_MKS2_MKP2" H 5338 3900 50  0001 C CNN
-F 3 "~" H 5300 4050 50  0001 C CNN
-	1    5300 4050
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	3400 4150 3850 4150
 Wire Wire Line
 	3400 2700 3400 4150
 Connection ~ 3850 4150
+Wire Wire Line
+	4650 4050 6200 4050
 $EndSCHEMATC
