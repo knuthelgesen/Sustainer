@@ -13,7 +13,7 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 2850 3350 0    50   Input ~ 0
+Text HLabel 2100 3350 0    50   Input ~ 0
 input
 $Comp
 L Device:R R8
@@ -256,4 +256,17 @@ Wire Wire Line
 	3400 3000 3400 2900
 Wire Wire Line
 	3400 2900 3500 2900
+$Comp
+L Device:C C9
+U 1 1 5E5A0857
+P 2700 3350
+F 0 "C9" V 2550 3350 50  0000 C CNN
+F 1 "1u" V 2850 3350 50  0000 C CNN
+F 2 "" H 2738 3200 50  0001 C CNN
+F 3 "~" H 2700 3350 50  0001 C CNN
+	1    2700 3350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2550 3350 2100 3350
 $EndSCHEMATC
